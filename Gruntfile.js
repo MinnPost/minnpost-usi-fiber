@@ -105,7 +105,7 @@ module.exports = function(grunt) {
           'bower_components/jquery/jquery.min.js',
           'bower_components/jquery-jsonp/src/jquery.jsonp.js',
           'bower_components/underscore/underscore-min.js',
-          'bower_components/leaflet/leaflet.js'
+          'bower_components/leaflet/dist/leaflet.js'
         ],
         dest: 'dist/<%= pkg.name %>.libs.js',
         options: {
@@ -115,12 +115,14 @@ module.exports = function(grunt) {
       // CSS libs
       libs_css: {
         src: [
-            
+          'bower_components/leaflet/dist/leaflet.css'
         ], 
         dest: 'dist/<%= pkg.name %>.libs.css'
       },
       libs_css_ie: {
-        src: [],
+        src: [
+          'bower_components/leaflet/dist/leaflet.ie.css'
+        ],
         dest: 'dist/<%= pkg.name %>.libs.ie.css'
       }
     },
