@@ -20,6 +20,7 @@ The `usi-fiber.geo.json` is created with: `rm ./data/usi-fiber.geo.json && ogr2o
 1. Install [Bower](http://bower.io/): `npm install -g bower` 
 1. Install [Ruby](http://www.ruby-lang.org/en/downloads/), though it is probably already installed on your system.
 1. Install [Sass](http://sass-lang.com/): `gem install sass`
+1. Because Leaflet comes unbuilt, we need to build it with Jake: `npm install -g jake`
 
 ## Install
 
@@ -27,6 +28,7 @@ The `usi-fiber.geo.json` is created with: `rm ./data/usi-fiber.geo.json && ogr2o
 1. Go into the template directory: `cd minnpost-usi-fiber`
 1. Install NodeJS packages: `npm install`
 1. Install Bower components: `bower install`
+1. Because Leaflet comes unbuilt, we need to build it: `cd bower_components/leaflet/ && npm install && jake; cd -;`
 
 ## Development and Run Locally
 
