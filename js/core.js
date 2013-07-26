@@ -51,7 +51,7 @@ _.mixin({
  * Override Backbone's ajax function to use $.jsonp as it handles
  * errors for JSONP requests
  */
-if (!_.isUndefined(Backbone) && !_.isUndefined($.jsonp) && _.isFunction(Backbone.$.jsonp)) {
+if (typeof Backbone != 'undefined' && !_.isUndefined($.jsonp) && _.isFunction(Backbone.$.jsonp)) {
   Backbone.ajax = function() {
     return Backbone.$.jsonp.apply(Backbone.$, arguments);
   };
@@ -67,6 +67,7 @@ if (!_.isUndefined(Backbone) && !_.isUndefined($.jsonp) && _.isFunction(Backbone
   mpApps['minnpost-usi-fiber'] = App = (function() {
     function App(options) {
       this.options = _.extend(this.defaultOptions, options);
+      this.$el = $(this.options.el);
     }
     
     // Default options
@@ -107,6 +108,11 @@ if (!_.isUndefined(Backbone) && !_.isUndefined($.jsonp) && _.isFunction(Backbone
         });
       }
     };
+    // Wrapper around getting a template
+    App.prototype.template = function(name) {
+      var templatePath = 'js/templates/' + name + '.html';
+      return this.templates[templatePath];
+    };
   
     /**
      * Data source handling.  For development, we can call
@@ -134,7 +140,7 @@ if (!_.isUndefined(Backbone) && !_.isUndefined($.jsonp) && _.isFunction(Backbone
       // Go through each file and add to defers
       _.each(name, function(d) {
         var defer;
-        if (_.isUndefined(app.data[d])) {
+        if (_.isUndefined(thisApp.data[d])) {
           
           if (useJSONP) {
             defer = $.jsonp({

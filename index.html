@@ -94,10 +94,12 @@ addthis_config = Drupal.settings.addthis.config_default; addthis_share = Drupal.
 
     <!-- Application CSS -->
     <style type="text/css">
+      @import url('./bower_components/leaflet/dist/leaflet.css');
       @import url('./css/compiled/main.css');
     </style>
     <!--[if lte IE 8]>
       <style type="text/css">
+        @import url('./bower_components/leaflet/dist/leaflet.ie.css');
         @import url('./css/compiled/main.ie.css');
       </style>
     <![endif]-->
@@ -157,7 +159,7 @@ addthis_config = Drupal.settings.addthis.config_default; addthis_share = Drupal.
     <script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="./bower_components/jquery-jsonp/src/jquery.jsonp.js"></script>
     <script type="text/javascript" src="./bower_components/underscore/underscore-min.js"></script>
-    <script type="text/javascript" src="./bower_components/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="./bower_components/leaflet/dist/leaflet.js"></script>
 
     <script type="text/javascript" src="./js/core.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>

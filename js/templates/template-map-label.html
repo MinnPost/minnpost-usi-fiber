@@ -1,0 +1,8 @@
+<div class="map-label-inner-container">
+  <h4><%= street %> <br /> <%= numbers %></h4>
+  Status: <%= status %>
+  
+  <% if (status == 'live') { %>
+    <br />At capacity: <%= (capacity) ? 'Yes' : 'No' %>
+  <% } %>
+</div>
