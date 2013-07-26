@@ -10,6 +10,8 @@ Data is manually created/copied from the [USI Fiber site](http://fiber.usinterne
 
 Data was created with [QGIS](http://www.qgis.org/).  You can open the project at `./data-processing/qgis/usi-fiber-qgis.qgs`.  The `mapquest.xml` file allows to bring in MapQuest's open streets.
 
+The `usi-fiber.geo.json` is created with: `rm ./data/usi-fiber.geo.json && ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./data/usi-fiber.geo.json -s_srs EPSG:900913 ./data/usi-fiber.shpfile/usi-fiber.shp`.
+
 ## Prerequisites
 
 1. Install [Git](http://git-scm.com/).

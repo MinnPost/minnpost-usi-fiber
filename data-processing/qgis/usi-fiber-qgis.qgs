@@ -4,29 +4,29 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>-10387037.252513</xmin>
-            <ymin>5613862.762231</ymin>
-            <xmax>-10384124.965968</xmax>
-            <ymax>5615704.174180</ymax>
+            <xmin>-10385985.097947</xmin>
+            <ymin>5613914.928399</ymin>
+            <xmax>-10383162.969805</xmax>
+            <ymax>5615699.334021</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
             <spatialrefsys>
-                <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs</proj4>
-                <srsid>3857</srsid>
-                <srid>3857</srid>
-                <authid>EPSG:3857</authid>
-                <description>WGS 84 / Pseudo Mercator</description>
-                <projectionacronym>merc</projectionacronym>
+                <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+                <srsid>3452</srsid>
+                <srid>4326</srid>
+                <authid>EPSG:4326</authid>
+                <description>WGS 84</description>
+                <projectionacronym>longlat</projectionacronym>
                 <ellipsoidacronym>WGS84</ellipsoidacronym>
-                <geographicflag>false</geographicflag>
+                <geographicflag>true</geographicflag>
             </spatialrefsys>
         </destinationsrs>
     </mapcanvas>
     <legend updateDrawingOrder="false">
         <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="usi-fiber" showFeatureCount="0">
             <filegroup open="true" hidden="false">
-                <legendlayerfile isInOverview="0" layerid="usi_fiber20130725161451764" visible="1"/>
+                <legendlayerfile isInOverview="0" layerid="usi_fiber20130726153113935" visible="1"/>
             </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="mapquest" showFeatureCount="0">
@@ -95,7 +95,7 @@
             </rasterproperties>
         </maplayer>
         <maplayer minimumScale="0" maximumScale="1e+08" geometry="Line" type="vector" hasScaleBasedVisibilityFlag="0">
-            <id>usi_fiber20130725161451764</id>
+            <id>usi_fiber20130726153113935</id>
             <datasource>../../data/usi-fiber.shpfile/usi-fiber.shp</datasource>
             <title></title>
             <abstract></abstract>
@@ -120,7 +120,7 @@
                     <symbol outputUnit="MM" alpha="1" type="line" name="0">
                         <layer pass="0" class="SimpleLine" locked="0">
                             <prop k="capstyle" v="square"/>
-                            <prop k="color" v="216,104,73,255"/>
+                            <prop k="color" v="140,102,101,255"/>
                             <prop k="customdash" v="5;2"/>
                             <prop k="joinstyle" v="bevel"/>
                             <prop k="offset" v="0"/>
@@ -163,9 +163,17 @@
         </maplayer>
     </projectlayers>
     <properties>
+        <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+        <WMSOnlineResource type="QString"></WMSOnlineResource>
+        <WMSContactPerson type="QString"></WMSContactPerson>
+        <Identify>
+            <disabledLayers type="QStringList"/>
+        </Identify>
+        <WMSContactPhone type="QString"></WMSContactPhone>
         <SpatialRefSys>
+            <ProjectCRSProj4String type="QString">+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs +towgs84=0,0,0</ProjectCRSProj4String>
             <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-            <ProjectCRSID type="int">3857</ProjectCRSID>
+            <ProjectCRSID type="int">3452</ProjectCRSID>
         </SpatialRefSys>
         <Paths>
             <Absolute type="bool">false</Absolute>
@@ -179,9 +187,14 @@
             <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
             <CanvasColorBluePart type="int">255</CanvasColorBluePart>
         </Gui>
+        <WMSContactMail type="QString"></WMSContactMail>
         <PositionPrecision>
             <DecimalPlaces type="int">2</DecimalPlaces>
             <Automatic type="bool">true</Automatic>
         </PositionPrecision>
+        <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+        <WMSContactOrganization type="QString"></WMSContactOrganization>
+        <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+        <WMSServiceTitle type="QString"></WMSServiceTitle>
     </properties>
 </qgis>
