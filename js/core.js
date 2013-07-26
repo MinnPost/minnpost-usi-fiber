@@ -3,9 +3,11 @@
  */
 
 /**
- * Global variable to hold the "applications".
+ * Global variable to hold the "applications" and templates.
  */
 var mpApps = mpApps || {};
+var mpTemplates = mpTemplates || {};
+mpTemplates['minnpost-usi-fiber'] = mpTemplates['minnpost-usi-fiber'] || {};
 
 /**
  * Extend underscore
@@ -63,6 +65,7 @@ if (typeof Backbone != 'undefined' && !_.isUndefined($.jsonp) && _.isFunction(Ba
  */
 (function($, undefined) {
   var App;
+  var appTemplates = mpTemplates['minnpost-usi-fiber'] || {};
   
   mpApps['minnpost-usi-fiber'] = App = (function() {
     function App(options) {
@@ -86,7 +89,7 @@ if (typeof Backbone != 'undefined' && !_.isUndefined($.jsonp) && _.isFunction(Ba
      *
      * Expects callback like: function(compiledTemplate) {  }
      */
-    App.prototype.templates = {};
+    App.prototype.templates = appTemplates;
     App.prototype.getTemplate = function(name, callback, context) {
       var thisApp = this;
       var templatePath = 'js/templates/' + name + '.html';
