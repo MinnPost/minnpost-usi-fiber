@@ -139,6 +139,13 @@
     this.$el.find('.live .swatch').css('background-color', this.colors.live);
     this.$el.find('.live-no-capcity .swatch').css('background-color', this.colors.capacity);
     this.$el.find('.pending .swatch').css('background-color', this.colors.pending);
+    
+    // Siumple reset map view
+    this.$el.find('.reset-map-view').text('Reset map view')
+      .on('click', this.$el, function(e) {
+        e.preventDefault();
+        thisApp.map.fitBounds(thisApp.fiberJSONLayer.getBounds());
+      });
   };
   
 })(mpApps['minnpost-usi-fiber'], jQuery);
