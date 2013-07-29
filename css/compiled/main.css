@@ -83,7 +83,7 @@ body .node-unpublished {
   height: 400px;
   margin-bottom: 1em;
 }
-.minnpost-usi-fiber-application-container #fiber-map .map-label-container {
+.minnpost-usi-fiber-application-container .leaflet-container .map-label-container {
   min-width: 10em;
   max-width: 18em;
   min-height: 2em;
@@ -96,7 +96,7 @@ body .node-unpublished {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
   border: 1px solid #888;
 }
-.minnpost-usi-fiber-application-container #fiber-map .map-label-container .map-label-inner-container {
+.minnpost-usi-fiber-application-container .leaflet-container .map-label-container .map-label-inner-container {
   padding: .5em;
 }
 .minnpost-usi-fiber-application-container .legend .legend-item {

@@ -70,7 +70,9 @@ body .node-unpublished {
     width: 100%;
     height: 400px;
     margin-bottom: 1em;
-    
+  }
+  
+  .leaflet-container {
     .map-label-container {
       min-width: 10em;
       max-width: 18em;

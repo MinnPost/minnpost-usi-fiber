@@ -40,7 +40,7 @@ module.exports = function(grunt) {
         },
         files: {
           'css/compiled/main.min.css': 'css/main.scss',
-          'css/compiled/main.ie.min.css': 'css/main.scss'
+          'css/compiled/main.ie.min.css': 'css/main.ie.scss'
         }
       },
       dev: {
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
         },
         files: {
           'css/compiled/main.css': 'css/main.scss',
-          'css/compiled/main.ie.css': 'css/main.scss'
+          'css/compiled/main.ie.css': 'css/main.ie.scss'
         }
       }
     },
