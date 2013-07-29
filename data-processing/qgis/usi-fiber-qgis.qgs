@@ -4,10 +4,10 @@
     <mapcanvas>
         <units>degrees</units>
         <extent>
-            <xmin>-10385985.097947</xmin>
-            <ymin>5613914.928399</ymin>
-            <xmax>-10383162.969805</xmax>
-            <ymax>5615699.334021</ymax>
+            <xmin>-10387717.398977</xmin>
+            <ymin>5611197.230107</ymin>
+            <xmax>-10384216.658489</xmax>
+            <ymax>5613702.794948</ymax>
         </extent>
         <projections>0</projections>
         <destinationsrs>
@@ -134,7 +134,7 @@
                 <sizescale field=""/>
             </renderer-v2>
             <customproperties/>
-            <displayfield></displayfield>
+            <displayfield>id</displayfield>
             <label>0</label>
             <labelattributes>
                 <label fieldname="" text="Label"/>
@@ -156,9 +156,9 @@
                 <multilineenabled fieldname="" on=""/>
                 <selectedonly on=""/>
             </labelattributes>
-            <editform></editform>
+            <editform>.</editform>
             <editforminit></editforminit>
-            <annotationform></annotationform>
+            <annotationform>.</annotationform>
             <attributeactions/>
         </maplayer>
     </projectlayers>
