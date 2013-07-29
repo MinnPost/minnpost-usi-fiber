@@ -51,7 +51,7 @@
   // Make Map
   app.prototype.makeMap = function() {
     var thisApp = this;
-    var baseLayer = new L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png');
+    var baseLayer = new L.tileLayer('//{s}.tiles.mapbox.com/v3/minnpost.map-wi88b700/{z}/{x}/{y}.png');
 
     // Create map
     this.map = new L.map('fiber-map', {
