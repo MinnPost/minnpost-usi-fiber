@@ -39,10 +39,17 @@
       this.$el.html(this.template('template-application')({ }));
       this.$el.find('.footnote-container').html(this.template('template-footnote')({ }));
       
+      // Mark as loading
+      this.$el.find('.message-container').html(this.template('template-loading')({ })).slideDown();
+      
       // Get data
       this.getLocalData('usi-fiber.geo').done(function() {
         thisApp.fiberJSON = arguments[0];
         thisApp.makeMap();
+        
+        thisApp.$el.find('.message-container').slideUp(function() {
+          $(this).html('');
+        });
       });
       
     }, this);
