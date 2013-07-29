@@ -47,8 +47,12 @@
     var baseLayer = new L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png');
 
     // Create map
-    this.map = new L.map('fiber-map');
-    this.map.setView([44.9800, -93.2636], 12);
+    this.map = new L.map('fiber-map', {
+      zoom: 10,
+      center: [44.9800, -93.2636],
+      minZoom: 10,
+      maxZoom: 18
+    });
     this.map.attributionControl.setPrefix(false);
     this.map.addLayer(baseLayer);
     
@@ -81,6 +85,9 @@
           }
         }
         
+        // Determine thickness from zoom
+        style.weight = 3 + (thisApp.map.getZoom() - 12);
+        
         return style;
       },
       onEachFeature: function(feature, layer) {
@@ -111,8 +118,15 @@
     });
     this.map.addLayer(this.fiberJSONLayer);
     
+    // Handle zooming
+    this.map.on('zoomend', function(e) {
+      _.each(thisApp.fiberJSONLayer._layers, function(l) {
+        thisApp.fiberJSONLayer.resetStyle(l);
+      });
+    });
+    
     // Zoom to extents
-    //this.map.fitBounds(this.fiberJSONLayer.getBounds());
+    this.map.fitBounds(this.fiberJSONLayer.getBounds());
   };
   
 })(mpApps['minnpost-usi-fiber'], jQuery);
