@@ -3,9 +3,11 @@
  */
 
 /**
- * Global variable to hold the "applications".
+ * Global variable to hold the "applications" and templates.
  */
 var mpApps = mpApps || {};
+var mpTemplates = mpTemplates || {};
+mpTemplates['minnpost-usi-fiber'] = mpTemplates['minnpost-usi-fiber'] || {};
 
 /**
  * Extend underscore
@@ -63,6 +65,7 @@ if (typeof Backbone != 'undefined' && !_.isUndefined($.jsonp) && _.isFunction(Ba
  */
 (function($, undefined) {
   var App;
+  var appTemplates = mpTemplates['minnpost-usi-fiber'] || {};
   
   mpApps['minnpost-usi-fiber'] = App = (function() {
     function App(options) {
@@ -86,7 +89,7 @@ if (typeof Backbone != 'undefined' && !_.isUndefined($.jsonp) && _.isFunction(Ba
      *
      * Expects callback like: function(compiledTemplate) {  }
      */
-    App.prototype.templates = {};
+    App.prototype.templates = appTemplates;
     App.prototype.getTemplate = function(name, callback, context) {
       var thisApp = this;
       var templatePath = 'js/templates/' + name + '.html';
@@ -190,31 +193,30 @@ if (typeof Backbone != 'undefined' && !_.isUndefined($.jsonp) && _.isFunction(Ba
 
 
 
-this["mpApp"] = this["mpApp"] || {};
-this["mpApp"]["minnpost-usi-fiber"] = this["mpApp"]["minnpost-usi-fiber"] || {};
-this["mpApp"]["minnpost-usi-fiber"]["templates"] = this["mpApp"]["minnpost-usi-fiber"]["templates"] || {};
+this["mpTemplates"] = this["mpTemplates"] || {};
+this["mpTemplates"]["minnpost-usi-fiber"] = this["mpTemplates"]["minnpost-usi-fiber"] || {};
 
-this["mpApp"]["minnpost-usi-fiber"]["templates"]["js/templates/template-application.html"] = function(obj) {
+this["mpTemplates"]["minnpost-usi-fiber"]["js/templates/template-application.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<div id="fiber-map">\n</div>\n\n<div class="footnote-container">\n</div>';
+__p += '<div class="message-container"></div>\n\n<a href="#" class="reset-map-view"></a>\n\n<div id="fiber-map">\n</div>\n\n<div class="legend cf">\n  <div class="legend-item live">\n    <div><span class="swatch"></span> <strong>Live</strong>: The fiber network has been laid and residents are able to sign up for service.</div>\n  </div>\n  \n  <div class="legend-item live-no-capcity">\n    <div><span class="swatch"></span> <strong>Live (capacity reached)</strong>: The fiber network has been laid but capacity reached; no new installations are available at this time unless the building is already wired.</div>\n  </div>\n  \n  <div class="legend-item pending">\n    <div><span class="swatch"></span> <strong>Pending</strong>: The network is still under construction and should be available soon (see individual segments for estimated data of completion).</div>\n  </div>\n</div>\n\n<div class="footnote-container">\n</div>';
 
 }
 return __p
 };
 
-this["mpApp"]["minnpost-usi-fiber"]["templates"]["js/templates/template-footnote.html"] = function(obj) {
+this["mpTemplates"]["minnpost-usi-fiber"]["js/templates/template-footnote.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<div class="footnote">\n  <p>Code, techniques, and data on <a href="https://github.com/MinnPost/minnpost-usi-fiber" target="_blank">Github</a>.</p>\n</div>';
+__p += '<div class="footnote">\n  <p>Fiber data collected from the <a href="http://fiber.usinternet.com/coverage-areas/" target="_blank">US Internet Fiber site</a>.  Some map data &copy; OpenStreetMap contributors; licensed under the <a href="http://www.openstreetmap.org/copyright" target="_blank">Open Data Commons Open Database License</a>.  Some map design &copy; MapBox; licensed according to the <a href="http://mapbox.com/tos/" target="_blank">MapBox Terms of Service</a>.  Other code, techniques, and data can be found on <a href="https://github.com/MinnPost/minnpost-usi-fiber" target="_blank">Github</a>.</p>\n</div>';
 
 }
 return __p
 };
 
-this["mpApp"]["minnpost-usi-fiber"]["templates"]["js/templates/template-loading.html"] = function(obj) {
+this["mpTemplates"]["minnpost-usi-fiber"]["js/templates/template-loading.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
@@ -224,7 +226,7 @@ __p += '<div class="loading-container">\n  <div class="loading"><span>Loading...
 return __p
 };
 
-this["mpApp"]["minnpost-usi-fiber"]["templates"]["js/templates/template-map-label.html"] = function(obj) {
+this["mpTemplates"]["minnpost-usi-fiber"]["js/templates/template-map-label.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
@@ -241,6 +243,12 @@ __p += '\n    <br />At capacity: ' +
 ((__t = ( (capacity) ? 'Yes' : 'No' )) == null ? '' : __t) +
 '\n  ';
  } ;
+__p += '\n  \n  ';
+ if (_.isString(complete)) { ;
+__p += '\n    <br />Estimated completion: ' +
+((__t = ( complete )) == null ? '' : __t) +
+'\n  ';
+ } ;
 __p += '\n</div>';
 
 }
@@ -251,10 +259,17 @@ return __p
  * Main app logic for: minnpost-usi-fiber
  */
 (function(app, $, undefined) {
+  
+  // Colors
+  app.prototype.colors = {
+    live: '#6DAC15',
+    capacity: '#ACA015',
+    pending: '#AC5415'
+  };
 
-  // Green: 6DAC15, Yellow: ACA015  Brown/red: AC5415
+  // Default map style
   app.prototype.defaultMapStyle = {
-    'color': '#AC5415',
+    'color': app.prototype.colors.pending,
     'weight': 3,
     'opacity': 0.65
   };
@@ -281,10 +296,17 @@ return __p
       this.$el.html(this.template('template-application')({ }));
       this.$el.find('.footnote-container').html(this.template('template-footnote')({ }));
       
+      // Mark as loading
+      this.$el.find('.message-container').html(this.template('template-loading')({ })).slideDown();
+      
       // Get data
       this.getLocalData('usi-fiber.geo').done(function() {
         thisApp.fiberJSON = arguments[0];
         thisApp.makeMap();
+        
+        thisApp.$el.find('.message-container').slideUp(function() {
+          $(this).html('');
+        });
       });
       
     }, this);
@@ -293,11 +315,15 @@ return __p
   // Make Map
   app.prototype.makeMap = function() {
     var thisApp = this;
-    var baseLayer = new L.tileLayer('http://{s}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png');
+    var baseLayer = new L.tileLayer('//{s}.tiles.mapbox.com/v3/minnpost.map-wi88b700/{z}/{x}/{y}.png');
 
     // Create map
-    this.map = new L.map('fiber-map');
-    this.map.setView([44.9800, -93.2636], 12);
+    this.map = new L.map('fiber-map', {
+      zoom: 10,
+      center: [44.9800, -93.2636],
+      minZoom: 10,
+      maxZoom: 18
+    });
     this.map.attributionControl.setPrefix(false);
     this.map.addLayer(baseLayer);
     
@@ -323,12 +349,15 @@ return __p
         
         // If live, then green, but if capacity full, yellow
         if (feature.properties.status === 'live') {
-          style.color = '#6DAC15';
+          style.color = thisApp.colors.live;
           
           if (feature.properties.capacity === 1) {
-            style.color = '#ACA015';
+            style.color = thisApp.colors.capacity;
           }
         }
+        
+        // Determine thickness from zoom
+        style.weight = 3 + (thisApp.map.getZoom() - 12);
         
         return style;
       },
@@ -360,8 +389,27 @@ return __p
     });
     this.map.addLayer(this.fiberJSONLayer);
     
+    // Handle zooming
+    this.map.on('zoomend', function(e) {
+      _.each(thisApp.fiberJSONLayer._layers, function(l) {
+        thisApp.fiberJSONLayer.resetStyle(l);
+      });
+    });
+    
     // Zoom to extents
-    //this.map.fitBounds(this.fiberJSONLayer.getBounds());
+    this.map.fitBounds(this.fiberJSONLayer.getBounds());
+    
+    // Color in legend
+    this.$el.find('.live .swatch').css('background-color', this.colors.live);
+    this.$el.find('.live-no-capcity .swatch').css('background-color', this.colors.capacity);
+    this.$el.find('.pending .swatch').css('background-color', this.colors.pending);
+    
+    // Siumple reset map view
+    this.$el.find('.reset-map-view').text('Reset map view')
+      .on('click', this.$el, function(e) {
+        e.preventDefault();
+        thisApp.map.fitBounds(thisApp.fiberJSONLayer.getBounds());
+      });
   };
   
 })(mpApps['minnpost-usi-fiber'], jQuery);
