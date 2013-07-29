@@ -5,4 +5,8 @@
   <% if (status == 'live') { %>
     <br />At capacity: <%= (capacity) ? 'Yes' : 'No' %>
   <% } %>
+  
+  <% if (_.isString(complete)) { %>
+    <br />Estimated completion: <%= complete %>
+  <% } %>
 </div>

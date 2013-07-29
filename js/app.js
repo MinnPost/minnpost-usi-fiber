@@ -2,10 +2,17 @@
  * Main app logic for: minnpost-usi-fiber
  */
 (function(app, $, undefined) {
+  
+  // Colors
+  app.prototype.colors = {
+    live: '#6DAC15',
+    capacity: '#ACA015',
+    pending: '#AC5415'
+  };
 
-  // Green: 6DAC15, Yellow: ACA015  Brown/red: AC5415
+  // Default map style
   app.prototype.defaultMapStyle = {
-    'color': '#AC5415',
+    'color': app.prototype.colors.pending,
     'weight': 3,
     'opacity': 0.65
   };
@@ -78,10 +85,10 @@
         
         // If live, then green, but if capacity full, yellow
         if (feature.properties.status === 'live') {
-          style.color = '#6DAC15';
+          style.color = thisApp.colors.live;
           
           if (feature.properties.capacity === 1) {
-            style.color = '#ACA015';
+            style.color = thisApp.colors.capacity;
           }
         }
         
@@ -127,6 +134,11 @@
     
     // Zoom to extents
     this.map.fitBounds(this.fiberJSONLayer.getBounds());
+    
+    // Color in legend
+    this.$el.find('.live .swatch').css('background-color', this.colors.live);
+    this.$el.find('.live-no-capcity .swatch').css('background-color', this.colors.capacity);
+    this.$el.find('.pending .swatch').css('background-color', this.colors.pending);
   };
   
 })(mpApps['minnpost-usi-fiber'], jQuery);
