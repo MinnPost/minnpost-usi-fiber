@@ -66,7 +66,8 @@
       zoom: 10,
       center: [44.9800, -93.2636],
       minZoom: 10,
-      maxZoom: 18
+      maxZoom: 18,
+      scrollWheelZoom: false
     });
     this.map.attributionControl.setPrefix(false);
     this.map.addLayer(baseLayer);
