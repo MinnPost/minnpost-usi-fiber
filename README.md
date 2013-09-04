@@ -4,13 +4,13 @@ Where USI has installed and will install fiber optic Internet connections.
 
 ## Data
 
-Data is manually created/copied from the [USI Fiber site](http://fiber.usinternet.com/coverage-areas/).
+Source data comes from the [data feed](https://my.usinternet.com/fiber/order/kml/Phases1to43v20130812.kml) found at [my.usinternet.com/fiber/](https://my.usinternet.com/fiber/).  Some processing has been done to supplement the data.
 
 ## Data Processing
 
-Data was created with [QGIS](http://www.qgis.org/).  You can open the project at `./data-processing/qgis/usi-fiber-qgis.qgs`.  The `mapquest.xml` file allows to bring in MapQuest's open streets.
-
-The `usi-fiber.geo.json` is created with: `rm ./data/usi-fiber.geo.json && ogr2ogr -f GeoJSON -t_srs EPSG:4326 ./data/usi-fiber.geo.json -s_srs EPSG:900913 ./data/usi-fiber.shpfile/usi-fiber.shp`.
+1. Get the original data: `wget -O data/original-usi-fiber.kml https://my.usinternet.com/fiber/order/kml/Phases1to43v20130812.kml`
+1. Convert go GeoJSON: `ogr2ogr -f GeoJSON -t_srs EPSG:4326 data/original-usi-fiber.geo.json data/original-usi-fiber.kml`
+1. Process the GeoJSON file: `node data-processing/process-geojson-fiber-data/js`
 
 ## Prerequisites
 

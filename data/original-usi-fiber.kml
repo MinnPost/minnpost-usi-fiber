@@ -1,0 +1,984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Phases1to43.kml</name>
+	<Style id="sh_ylw-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf54ff2d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5440ff65</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin3100</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin15">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf54ff2d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5440ff65</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin40</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin8</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin40">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin3100">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf54ff2d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5440ff65</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin5</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin8">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf54ff2d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5440ff65</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin5">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin101">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin31</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin140">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin4</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin81</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin16">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf54ff2d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5440ff65</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin81">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin4">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin11">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin31">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf54ff2d</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5440ff65</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>bf00fff6</color>
+		</LineStyle>
+		<PolyStyle>
+			<color>5400fffa</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Phases</name>
+		<open>1</open>
+		<Placemark>
+			<name>Phase 1 - 50th France</name>
+			<open>1</open>
+			<description>W 50th St to W 51st St from Ewing Ave S to York Ave S</description>
+			<styleUrl>#msn_ylw-pushpin10</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.3284037418283,44.91071752821515,0 -93.31948062406364,44.91065290653438,0 -93.31950036096332,44.91246219816367,0 -93.32839009816882,44.91252057959167,0 -93.3284037418283,44.91071752821515,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 2 - 50th France</name>
+			<open>1</open>
+			<description>W 51st St to W 52nd St from Ewing Ave S to York Ave S</description>
+			<styleUrl>#msn_ylw-pushpin10</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.3284104850749,44.90890760189631,0 -93.31947859894701,44.90884917903028,0 -93.31948062406364,44.91065290653438,0 -93.3284037418283,44.91071752821515,0 -93.3284104850749,44.90890760189631,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 3 - Wedge North</name>
+			<open>1</open>
+			<description>W Franklin Ave to W 22nd St from Hennepin Ave to Pillsbury Ave S</description>
+			<styleUrl>#msn_ylw-pushpin10</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29123237417645,44.9627083855965,0 -93.29258678647,44.96091131587642,0 -93.27877486615989,44.96090905944167,0 -93.27877780603669,44.96268816218792,0 -93.29123237417645,44.9627083855965,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 4 - Wedge South</name>
+			<open>1</open>
+			<description>W 22nd St to W 24th St from Hennepin Ave to Pillsbury Ave S</description>
+			<styleUrl>#msn_ylw-pushpin10</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29259191777052,44.96090847249985,0 -93.29394373025529,44.959129013295,0 -93.2787825837791,44.95911561982643,0 -93.27877581496321,44.96090016231459,0 -93.29259191777052,44.96090847249985,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 5 - Columbus North</name>
+			<open>1</open>
+			<description>3000 Columbus to 3799 Columbus</description>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.26433787683683,44.93415409450836,0 -93.26315005215118,44.93415514629294,0 -93.26331953772143,44.94831402792232,0 -93.2645446461045,44.94835157583888,0 -93.26433787683683,44.93415409450836,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 6 - Columbus South</name>
+			<open>1</open>
+			<description>3800 Columbus to 4799 Columbus</description>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.26449888909373,44.91610583366712,0 -93.26329401313831,44.91610435461179,0 -93.26314208829966,44.93415573282316,0 -93.26433900481948,44.93415260966427,0 -93.26449888909373,44.91610583366712,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 7 - Pillsbury North</name>
+			<open>1</open>
+			<description>3000 Pillsbury to 3799 Pillsbury</description>
+			<styleUrl>#msn_ylw-pushpin11</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28225460929279,44.93411127340732,0 -93.28058194570403,44.93411663817764,0 -93.28047049369776,44.94834940709369,0 -93.28219875223996,44.94833182969613,0 -93.28225460929279,44.93411127340732,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 8 - Pillsbury South</name>
+			<open>1</open>
+			<description>3800 Pillsbury to 4799 Pillsbury</description>
+			<styleUrl>#msn_ylw-pushpin11</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28249402795838,44.91598992477525,0 -93.28121093382985,44.91599833264425,0 -93.28114655515932,44.93047611127699,0 -93.28065330769692,44.93046803350837,0 -93.28058361215653,44.93412211655544,0 -93.28225883095972,44.93411058381287,0 -93.28228734117633,44.93046840910126,0 -93.28244737329031,44.93046701870657,0 -93.28249402795838,44.91598992477525,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 9 - Pleasant North</name>
+			<open>1</open>
+			<description>3000 Pleasant to 3799 Pleasant</description>
+			<styleUrl>#msn_ylw-pushpin11</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28374863912539,44.93410310317759,0 -93.28226159214992,44.93410313686491,0 -93.28220612424806,44.94835461642616,0 -93.28369530396188,44.94835473592819,0 -93.28374863912539,44.93410310317759,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 10 - Pleasant South</name>
+			<open>1</open>
+			<description>3800 Pleasant to 4799 Pleasant</description>
+			<styleUrl>#msn_ylw-pushpin11</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28244859649575,44.93046596725593,0 -93.28229184123514,44.93046868087408,0 -93.28226404770263,44.93410113343886,0 -93.28374576637177,44.93409952576555,0 -93.28381755588666,44.91598101745335,0 -93.28250073080717,44.91598496534603,0 -93.28244859649575,44.93046596725593,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 11 - Garfield North</name>
+			<open>1</open>
+			<description>3000 Garfield to 3799 Garfield</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28756080567479,44.93408553599882,0 -93.28631142380316,44.93408415348279,0 -93.28617965139632,44.94821215919004,0 -93.28746635138492,44.94821388159012,0 -93.28756080567479,44.93408553599882,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 12 - Garfield South</name>
+			<open>1</open>
+			<description>3800 Garfield to 4799 Garfield</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28763615765077,44.9159436227206,0 -93.28638306532793,44.91595939007161,0 -93.28631142380316,44.93408415348279,0 -93.28756080567479,44.93408553599882,0 -93.28763615765077,44.9159436227206,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 13 - Harriet North</name>
+			<open>1</open>
+			<description>3000 Harriet to 3799 Harriet</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28492224631239,44.94822617180598,0 -93.28617965139632,44.94821215919004,0 -93.28631142380316,44.93408415348279,0 -93.28501515280037,44.93408991235688,0 -93.28492224631239,44.94822617180598,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 14 - Harriet South</name>
+			<open>1</open>
+			<description>3800 Harriet to 4799 Harriet</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.2850133723603,44.93408749681125,0 -93.28631142380316,44.93408415348279,0 -93.28638306532793,44.91595939007161,0 -93.28507336366118,44.91597475458489,0 -93.2850133723603,44.93408749681125,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 15 - Aldrich North</name>
+			<open>1</open>
+			<description>3000 Aldrich to 3799 Aldrich</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29018392233542,44.93407725832589,0 -93.28891614050961,44.93407154995855,0 -93.28876103728814,44.94823854902297,0 -93.29001858111238,44.9482491743092,0 -93.29018392233542,44.93407725832589,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 16 - Aldrich South</name>
+			<open>1</open>
+			<description>3800 Aldrich to 4799 Aldrich</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29021337859263,44.91593486628087,0 -93.28898699318083,44.91593330600691,0 -93.28891614050961,44.93407154995855,0 -93.29018392233542,44.93407725832589,0 -93.29021337859263,44.91593486628087,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 17 - Bryant North</name>
+			<open>1</open>
+			<description>3000 Bryant to 3799 Bryant</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29001858111238,44.9482491743092,0 -93.29130133999385,44.94824521443754,0 -93.29144647063436,44.93407628048516,0 -93.29018392233542,44.93407725832589,0 -93.29001858111238,44.9482491743092,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 18 - Bryant South</name>
+			<open>1</open>
+			<description>3800 Bryant to 4799 Bryant</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29018392233542,44.93407725832589,0 -93.29144669770888,44.93407706720877,0 -93.29153152401047,44.91593616033873,0 -93.29021692644484,44.91593544183347,0 -93.29018392233542,44.93407725832589,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 19 - Colfax North</name>
+			<open>1</open>
+			<description>3000 Colfax to 3799 Colfax</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29271575473298,44.93408085894636,0 -93.29144647063436,44.93407628048516,0 -93.29130133999385,44.94824521443754,0 -93.29259078466627,44.94825936787294,0 -93.29271575473298,44.93408085894636,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 20 - Colfax South</name>
+			<open>1</open>
+			<description>3800 Colfax to 4799 Colfax</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29277919487181,44.91593650639544,0 -93.29153121529593,44.91592992100817,0 -93.29144647063436,44.93407628048516,0 -93.29271575473298,44.93408085894636,0 -93.29277919487181,44.91593650639544,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 21 - Dupont North</name>
+			<open>1</open>
+			<description>3000 Dupont to 3799 Dupont</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29259078466627,44.94825936787294,0 -93.29384300442256,44.94826921940442,0 -93.29398776799903,44.93408545888953,0 -93.29271575473298,44.93408085894636,0 -93.29259078466627,44.94825936787294,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 22 - Dupont South</name>
+			<open>1</open>
+			<description>3800 Dupont to 4799 Dupont</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29271575473298,44.93408085894636,0 -93.29398776799903,44.93408545888953,0 -93.29399972685923,44.92679408206197,0 -93.29555905457121,44.92678783167425,0 -93.2959758151877,44.92667663486896,0 -93.29618350722636,44.92644579166023,0 -93.29660019095878,44.92493627031973,0 -93.29647918901102,44.92368160827756,0 -93.29674183166917,44.92260438178952,0 -93.29629893097764,44.922504835511,0 -93.29583528470008,44.92256501615287,0 -93.29598946095021,44.92151039811279,0 -93.29640997455964,44.92063157612493,0 -93.2947427441068,44.92011768424968,0 -93.29470101687846,44.91965780471025,0 -93.29408518167585,44.91965720777076,0 -93.29396854681045,44.91775779559598,0 -93.29399610786399,44.9159439539971,0 -93.29277459071028,44.91593697167053,0 -93.29271575473298,44.93408085894636,0
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 23 - Emerson</name>
+			<open>1</open>
+			<description>3000 Emerson to 3599 Emerson</description>
+			<styleUrl>#msn_ylw-pushpin101</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29510036514009,44.94826330668629,0 -93.29521947085951,44.9376779137466,0 -93.29395395597702,44.93768684895836,0 -93.29384220842307,44.94826265741288,0 -93.29510036514009,44.94826330668629,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 24 - Fremont</name>
+			<description>3000 Fremont to 3599 Fremont</description>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.2964064933559,44.94824374562108,0 -93.29651749909156,44.93768172305876,0 -93.29521947085951,44.9376779137466,0 -93.29512195038583,44.94820510096109,0 -93.2964064933559,44.94824374562108,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 25 - Girard</name>
+			<open>1</open>
+			<description>3000 Girard to 3599 Girard</description>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.2976862658039,44.94828698145097,0 -93.2977612506297,44.93768165019954,0 -93.29651749909156,44.93768172305876,0 -93.2964064933559,44.94824374562108,0 -93.2976862658039,44.94828698145097,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 26 - Hennepin</name>
+			<open>1</open>
+			<description>3000 Hennepin to 3599 Hennepin</description>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.2989889771122,44.94832627687781,0 -93.29899391950585,44.93768189420635,0 -93.2977612506297,44.93768165019954,0 -93.2976862658039,44.94828698145097,0 -93.2989889771122,44.94832627687781,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 27 - Holmes</name>
+			<open>1</open>
+			<description>3000 Holmes to 3599 Holmes</description>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.30019299880492,44.94833152375053,0 -93.30028795904933,44.93768823295057,0 -93.29899391950585,44.93768189420635,0 -93.2989889771122,44.94832627687781,0 -93.30019299880492,44.94833152375053,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 28 - Humbolt</name>
+			<open>1</open>
+			<description>3000 Humbolt to 3599 Humbolt</description>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.30151297576373,44.9483584023134,0 -93.30155640695631,44.93768730073113,0 -93.30028795904933,44.93768823295057,0 -93.30019457240934,44.94833737696014,0 -93.30151297576373,44.9483584023134,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 29 - Irving Ave</name>
+			<open>1</open>
+			<description>3000 Irving to 3599 Irving</description>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.30273121422164,44.94834319711337,0 -93.30285166345854,44.93770120873755,0 -93.30155640695631,44.93768730073113,0 -93.30151297576373,44.9483584023134,0 -93.30273121422164,44.94834319711337,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 30 - James, Knox, Calhoun Pkwy</name>
+			<open>1</open>
+			<description>3000 - 3199 James, 3000-3099 Knox, 3000-3399 E Calhoun Pkwy</description>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.30580484620265,44.94814047710148,0 -93.3061671770276,44.94773867264912,0 -93.30557990477303,44.94665003059833,0 -93.30445544477759,44.94469075183104,0 -93.30363616441318,44.94316492180972,0 -93.30367724598376,44.9413284954468,0 -93.30281170299241,44.94133110577313,0 -93.30273780669017,44.94833643238751,0 -93.30534578563059,44.94832449070282,0 -93.30580484620265,44.94814047710148,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 31 - Wedge South West</name>
+			<open>1</open>
+			<description>2600-2799 Girard 2600-2799 Fremont 2400-2699 Emerson</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29743703667519,44.95376044297034,0 -93.29744433740758,44.95195058957508,0 -93.29507374016823,44.95194935398693,0 -93.29505827805389,44.95374517390132,0 -93.29376252452673,44.9537491444496,0 -93.29380285238184,44.95846507579591,0 -93.29444649032669,44.95847494262605,0 -93.29528868599876,44.95734151507833,0 -93.29531098119578,44.9555495119176,0 -93.29629207401345,44.9555515690341,0 -93.29628421256702,44.95477178314864,0 -93.29701291761323,44.95475711049447,0 -93.29743703667519,44.95376044297034,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 32 - EmersonDupontColfax</name>
+			<open>1</open>
+			<description>2700-2799 Emerson 2400-2799 Dupont 2700-2799 Colfax</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29505844670214,44.95374617996734,0 -93.29506887507495,44.95194678074694,0 -93.29125791420913,44.95195099713879,0 -93.29126908059392,44.95374621609788,0 -93.29252843909306,44.95373703188772,0 -93.29246579858113,44.95912850075688,0 -93.29381084944725,44.95912492828621,0 -93.29376119431291,44.95374779234243,0 -93.29505844670214,44.95374617996734,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 33 - ColfaxBryant</name>
+			<open>1</open>
+			<description>2400-2699 Colfax 2400-2699 Bryant</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28993477584068,44.95912573545814,0 -93.29246579858113,44.95912850075688,0 -93.29252783649265,44.95373800689348,0 -93.28997843050639,44.95374373958801,0 -93.28993477584068,44.95912573545814,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 34 - BryantAldrichLyndale</name>
+			<open>1</open>
+			<description>2700-2799 Bryant 2400-2799 Aldrich 2700-2799 Lyndale</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28993093667145,44.95912301367203,0 -93.28997714846507,44.95374139864498,0 -93.2912691392758,44.9537409501574,0 -93.29125599467615,44.95195140876044,0 -93.2873905519196,44.95194801286214,0 -93.28738938759334,44.95374610366542,0 -93.28874048063182,44.95374184190639,0 -93.2886759471685,44.95912313080107,0 -93.28993093667145,44.95912301367203,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 35 - LyndaleGarfield</name>
+			<open>1</open>
+			<description>2400-2699 Lyndale 2400-2699 Garfield</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.2886759471685,44.95912313080107,0 -93.28874048063182,44.95374184190639,0 -93.28615545282781,44.9537435986503,0 -93.28612499772234,44.95912043438137,0 -93.2886759471685,44.95912313080107,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 36 - GarfieldHarrietGrand</name>
+			<open>1</open>
+			<description>2600-2699 Garfield 2400-2699 Harriet 2700-2799 Grand</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28612095543741,44.9591182890081,0 -93.28615611853795,44.95374235373114,0 -93.28738882312985,44.95374103543758,0 -93.28738688771895,44.95194729538944,0 -93.2836819487289,44.95194551926194,0 -93.28364883126257,44.95374568513589,0 -93.28489101315486,44.95374180653589,0 -93.28482641011453,44.95911358968478,0 -93.28612095543741,44.9591182890081,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 37 - GrandPleasant</name>
+			<open>1</open>
+			<description>2400-2599 Grand
+2400-2799 Pleasant</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.2848257821371,44.95911789579932,0 -93.28486734876796,44.95553870924284,0 -93.28360351345344,44.95552876916803,0 -93.2836819487289,44.95194551926194,0 -93.28216354584841,44.95194229860655,0 -93.28211254766151,44.95911814742586,0 -93.2848257821371,44.95911789579932,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 38 - PillsburyBlaisdell</name>
+			<open>1</open>
+			<description>2400-2799 Pillsbury
+2400-2599 Blaisdell</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.28211254766151,44.95911814742586,0 -93.28216354584841,44.95194229860655,0 -93.28048850389312,44.95193966699895,0 -93.2804725290823,44.955536680172,0 -93.27879259172784,44.95554222858257,0 -93.27878077264199,44.95911270287708,0 -93.28211254766151,44.95911814742586,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 39 - Blaisdell</name>
+			<open>1</open>
+			<description>2600-2799 Blaisdell</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.27883827143125,44.95193672911216,0 -93.27879259172784,44.95554222858257,0 -93.2804725290823,44.955536680172,0 -93.28048850389312,44.95193966699895,0 -93.27883827143125,44.95193672911216,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 40 - 1stAve</name>
+			<open>1</open>
+			<description>2200-2799 1st Ave S</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.27598703188276,44.95194381930246,0 -93.2758944998051,44.96090264071218,0 -93.27717013444938,44.96090594750285,0 -93.2772719628865,44.95193468567857,0 -93.27598703188276,44.95194381930246,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 41 - Stevens</name>
+			<open>1</open>
+			<description>2200-2799 Stevens</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.27472579062669,44.9519392084979,0 -93.27461461047132,44.96090333875954,0 -93.2758944998051,44.96090264071218,0 -93.27598703188276,44.95194381930246,0 -93.27472579062669,44.9519392084979,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 42 - GreenwayNorthWest</name>
+			<open>1</open>
+			<description>2800-2899 Girard, Fremont,
+Emerson, Dupont,
+Colfax, Bryant, Aldrich
+Lyndale, Garfield, Harriet</description>
+			<styleUrl>#msn_ylw-pushpin14</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.29764201192988,44.95195286939213,0 -93.29765736593708,44.95030471714298,0 -93.28488507824606,44.95028427202376,0 -93.2849087213749,44.95194920722651,0 -93.29764201192988,44.95195286939213,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Phase 43 - GreenwayNorthEast</name>
+			<open>1</open>
+			<description>2800-2899 Grand, Pleasant,
+Pillsbury, Blaisdell, Nicollet,
+1st Ave, Stevens</description>
+			<styleUrl>#msn_ylw-pushpin140</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-93.2849087213749,44.95194920722651,0 -93.28488507824606,44.95028427202376,0 -93.27473039444847,44.95035294781377,0 -93.27472194393724,44.95193985569891,0 -93.2849087213749,44.95194920722651,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

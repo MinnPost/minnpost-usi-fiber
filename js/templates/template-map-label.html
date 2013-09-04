@@ -1,12 +1,16 @@
 <div class="map-label-inner-container">
-  <h4><%= street %> <br /> <%= numbers %></h4>
-  Status: <%= status %>
-  
-  <% if (status == 'live') { %>
-    <br />At capacity: <%= (capacity) ? 'Yes' : 'No' %>
-  <% } %>
-  
-  <% if (_.isString(complete)) { %>
-    <br />Estimated completion: <%= complete %>
-  <% } %>
+  <h4><%= name %></h4>
+  <p><strong><%= description %></strong></p>
+
+  <p>
+    Phase: <%= phase %><br />
+    Status: <%= status %>
+    <% if (status == 'live') { %>
+      <br />At capacity: <%= (capacity) ? 'Yes' : 'No' %>
+    <% } %>
+
+    <% if (typeof complete != 'undefined' && _.isString(complete)) { %>
+      <br />Estimated completion: <%= complete %>
+    <% } %>
+  </p>
 </div>
