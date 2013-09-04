@@ -9,7 +9,7 @@ Source data comes from the [data feed](https://my.usinternet.com/fiber/order/kml
 ## Data Processing
 
 1. Get the original data: `wget -O data/original-usi-fiber.kml https://my.usinternet.com/fiber/order/kml/Phases1to43v20130812.kml`
-1. Convert go GeoJSON: `ogr2ogr -f GeoJSON -t_srs EPSG:4326 data/original-usi-fiber.geo.json data/original-usi-fiber.kml`
+1. Convert to GeoJSON: `ogr2ogr -f GeoJSON -t_srs EPSG:4326 data/original-usi-fiber.geo.json data/original-usi-fiber.kml`
 1. Process the GeoJSON file: `node data-processing/process-geojson-fiber-data/js`
 
 ## Prerequisites
